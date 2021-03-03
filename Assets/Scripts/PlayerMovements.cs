@@ -16,7 +16,7 @@ public class PlayerMovements : MonoBehaviour
     private bool m_hovering = false;
 
     private Material m_mat;
-    
+
     [SerializeField][Tooltip("La couleur s'assumera le machin lorsqu'il truc")] private Color m_hoverColor;
     private Color m_defaultColor;
     
@@ -35,7 +35,7 @@ public class PlayerMovements : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (m_hovering == false) Deplacement();
         
